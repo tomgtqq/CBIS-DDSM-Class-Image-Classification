@@ -8,6 +8,8 @@
 
 CBIS-DDSM（DDSM 的精选乳房成像子集）是 用于筛查乳房 X 光检查的数字数据库 (DDSM)的更新和标准化版本。DDSM 是一个包含 2,620 项扫描胶片乳腺摄影研究的数据库。它包含具有经过验证的病理信息的正常、良性和恶性病例。
 
+![例子](res\example.jpg)
+
 ## 三、模型介绍
 
 使用 paddlehub "resnet50_vd_imagenet_ssld" 模型 Fine-tune 训练
@@ -51,10 +53,20 @@ trainer.train(train_dataset, epochs=100, batch_size=BATCH_SIZE, eval_dataset=val
 
 训练模型以准确率(accuracy)为衡量标准,医学任务应该采用查全率(recall)做为模型的衡量标准,但是在'paddleHub fine-tune trianer api' 中我没有找到相关用法,需继续研究这部分内容
 
-# **资源**
+## 相关资源
 
 - 更多深度学习知识、产业案例，请参考：[awesome-DeepLearning](https://github.com/paddlepaddle/awesome-DeepLearning)
 
 - 更多预训练模型(图像、文本、语音、视频等)，请参考：[PaddleHub](https://github.com/PaddlePaddle/PaddleHub)
 
 - 飞桨框架相关资料，请参考：[飞桨深度学习平台](https://www.paddlepaddle.org.cn/?fr=paddleEdu_aistudio)
+
+## 版本
+
+版本遵循 SemVer 规则
+
+## 作者
+
+Tom Ge - 数据科学
+
+This project is licensed under the MIT License
